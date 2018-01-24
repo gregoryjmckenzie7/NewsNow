@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>YouLYRIC</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<!-- ******************* jumbotron ********************* -->
+
+    <div class="container">
+
+        <div class="jumbotron">
+
+          <h1 style="color: white;">YouLYRIC</h1>
+
+          <p style="text-align: center;">Lyrics that Match with your Youtube Video</p>
+
+        </div>
+
+    </div>
+
+<!-- ******************* media ********************* -->
+
+    <div class="container">
+
+        <table class="table">
+
+          <tr>
+
+            <th>Video</th> <!-- header for table -->
+
+            <th>Lyrics</th>
+
+          </tr>
+
+          <tr> <!-- column -->
+
+            <td class="videoBox">video box</td> <!-- row -->
+
+            <td class="lyricBox">lyric box</td>
+
+          </tr>
+
+        </table>
+
+    </div>
+
+    
+
+<!-- ******************* table for song info ********************* -->
+
+  <div class="container">
+
+    <div class="panel panel-default">
+
+      <div style="background-color: #e52d27;" class="panel-heading"
+
+      <h2 style="color: white;">Recent Songs</h2>
+
+    </div>
+
+    <div class="panel-body">
+
+      <table class="table"> <!--  table  -->
+
+        <thead>
+
+          <tr>
+
+            <th scope="col">Song:</th>
+
+            <th scope="col">Artist:</th>
+
+            <th scope="col">Album:</th>
+
+            <th scope="col">Year:</th>
+
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+      </table> <!-- table  -->
+
+    </div>
+
+  </div>
+
+    <form id="main-form"> <!-- ******************* form ********************* -->
+
+      <div class="form-group">
+
+        <label for="pwd">Search:</label>
+
+        <input type="text" class="form-control" id="search-video" placeholder="search video" name="search-video">
+
+      </div>
+
+      
+
+      <!-- ******************* buttons ********************* -->
+
+      <button type="submit" class="btn btn-success"> Add</button>
+
+      <button id ="clear-results" type="submit" class="btn btn-default">Clear Results</button>
+
+    </form> <!-- ******************* end of form ********************* -->
+
+  </div>
+
+</body>
+
+</html>
