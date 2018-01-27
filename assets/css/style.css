@@ -3,7 +3,7 @@
 #header {
     text-align: center;
     font-family:Impact;
-    background: #181818;
+    background: #454545;
 }
 
 
@@ -22,17 +22,12 @@ img {
 
 
 .jumbotron h1 {
-    font-size:90px;
+    font-size:120px;
     letter-spacing:.5;
     line-height:1;
+    color:#e52d27;
 }
 
-.awesome {
-
-    color:green;
-    
-
-}
 
 
 
@@ -47,14 +42,10 @@ body {
 
 table {
     background: white;
-    border-radius:6px;
     border: none;
 
 }
 
-thead {
-    border:none;
-}
 
 
 /* ====================== Video and news Section =================================*/
@@ -64,10 +55,9 @@ thead {
 }
 
 #video {
-    vertical-align: center;
-    text-align: center;
-    padding: 10px;
-    
+    text-align: left;
+   
+
 
 }
 
@@ -83,7 +73,7 @@ thead {
 
 
 #recentNews {
-    background-color: #898989;
+    background-color: #454545;
     width: 100%;
     padding-right:50px;
     padding-left:50px;
@@ -101,7 +91,7 @@ thead {
 }
 
 h2 {
-    color:white;
+   color: #e52d27; ;
 }
 
 .container {
@@ -115,8 +105,13 @@ p{
 
 .gradientFont{
     text-align: center;
-    color: #313131;
+    color: #e52d27;
     
+}
+
+label {
+
+    color: #e52d27;
 }
 
 form {
@@ -128,13 +123,35 @@ form {
 }
 
 #add-button {
-    background: #b50e67;
+    background: #e52d27;
     border: none;
     cursor:pointer;
 }
 
 #clear-results {
-    background: #84247b;
+    background: #e52d27;
     color: white;
     border:none;
 }
+
+/* ====================== Live News Buttons =================================*/
+
+#search-button {
+    background: #e52d27;
+    border: none;
+    color: white;
+}
+
+
+
+#cnnBnt:hover,
+#foxBnt:hover,
+#abcBnt:hover,
+#msnbcBnt:hover,
+#skyBnt:hover
+#search-button:hover {
+
+   cursor:pointer;
+   background-color:red;
+}
+
