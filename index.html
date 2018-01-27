@@ -1,125 +1,76 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html>
 
 <head>
-
-    <title>YouLYRIC</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+    <title> Rough Draft</title>
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!--Css Link-->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-
-<!-- ******************* jumbotron ********************* -->
-
-    <div class="container">
-
-        <div class="jumbotron">
-
-          <h1 style="color: white;">YouLYRIC</h1>
-
-          <p style="text-align: center;">Lyrics that Match with your Youtube Video</p>
-
+    <div class="jumbotron" id="header">
+        <h1 class="awesome">News Now</h1>
+        <p class="gradientFont">LIVE NEWS AT YOUR FINGERTIPS</p>
+    </div>
+    <div class="container-fluid">
+        <div class="jumbotron row" id="video-and-news">
+            <div class="col-md-6" alt="Youtube video will go here" id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uT3SBzmDxGk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6">
+                <a class="btn btn-default" href="#" role="button" id="cnnBnt">CNN Live</a>
+                <br>
+                <a class="btn btn-default" href="#" role="button" id="foxBnt">FOX News Live</a>
+                <br>
+                <a class="btn btn-default" href="#" role="button" id="abcBnt">ABC News Live</a>
+                <br>
+                <a class="btn btn-default" href="#" role="button" id="msnbcBnt">MSNBC Live</a>
+                <br>
+                <a class="btn btn-default" href="#" role="button" id="skyBnt">SKY News Live</a>
+            </div>
+        </div> 
+    </div>
+    <!-- ******************* end of main div ********************* -->
+    <!-- ******************* table for news info ********************* -->
+    <div class="container" id="recentNews">
+        <div>
+            <h2>Related News</h2>
         </div>
-
-    </div>
-
-<!-- ******************* media ********************* -->
-
-    <div class="container">
-
         <table class="table">
+            <!--  table  -->
+            <thead>
+                <tr class="table-light">
+                    <th scope="col">News Source:</th>
+                    <th scope="col">Articles:</th>
+                    <th scope="col">Date:</th>
+                    <th scope="col">Link:</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table> <!-- table  -->
+        
+        <!-- ******************* form ********************* -->
+        <form id="main-form">
+            <div class="form-group">
+                <label for="pwd">Search:</label>
+                <input type="text" class="form-control" id="search-video" placeholder="search topic" name="search-video">
+            </div>
+            <!-- ******************* buttons ********************* -->
+            <button type="submit" class="btn btn-success" id="add-button"> Add</button>
+            <button id="clear-results" type="submit" class="btn btn-default">Clear Results</button>
+        </form>
+        <!-- ******************* end of form ********************* -->
+    </div> <!-- ******************* end of table for song info ********************* -->
+</body>
 
-          <tr>
-
-            <th>Video</th> <!-- header for table -->
-
-            <th>Lyrics</th>
-
-          </tr>
-
-          <tr> <!-- column -->
-
-            <td class="videoBox">video box</td> <!-- row -->
-
-            <td class="lyricBox">lyric box</td>
-
-          </tr>
-
-        </table>
-
-    </div>
-
-    
-
-<!-- ******************* table for song info ********************* -->
-
-  <div class="container">
-
-    <div class="panel panel-default">
-
-      <div style="background-color: #e52d27;" class="panel-heading"
-
-      <h2 style="color: white;">Recent Songs</h2>
-
-    </div>
-
-    <div class="panel-body">
-
-      <table class="table"> <!--  table  -->
-
-        <thead>
-
-          <tr>
-
-            <th scope="col">Song:</th>
-
-            <th scope="col">Artist:</th>
-
-            <th scope="col">Album:</th>
-
-            <th scope="col">Year:</th>
-
-          </tr>
-
-        </thead>
-
-        <tbody>
-
-        </tbody>
-
-      </table> <!-- table  -->
-
-    </div>
-
-  </div>
-
-    <form id="main-form"> <!-- ******************* form ********************* -->
-
-      <div class="form-group">
-
-        <label for="pwd">Search:</label>
-
-        <input type="text" class="form-control" id="search-video" placeholder="search video" name="search-video">
-
-      </div>
-
-      
-
-      <!-- ******************* buttons ********************* -->
-
-      <button type="submit" class="btn btn-success"> Add</button>
-
-      <button id ="clear-results" type="submit" class="btn btn-default">Clear Results</button>
-
-    </form> <!-- ******************* end of form ********************* -->
-
-  </div>
-
+</html>
 </body>
 
 </html>
