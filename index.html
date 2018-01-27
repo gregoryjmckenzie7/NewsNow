@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> Rough Draft</title>
+    <title>Live News</title>
     <!--Bootstrap Link-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -21,18 +21,21 @@
     <div class="container-fluid">
         <div class="jumbotron row" id="video-and-news">
             <div class="col-md-6" alt="Youtube video will go here" id="video">
+              <h2>Live Video</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/uT3SBzmDxGk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             <div class="col-md-6">
-                <a class="btn btn-default" href="#" role="button" id="cnnBnt">CNN Live</a>
-                <br>
-                <a class="btn btn-default" href="#" role="button" id="foxBnt">FOX News Live</a>
-                <br>
-                <a class="btn btn-default" href="#" role="button" id="abcBnt">ABC News Live</a>
-                <br>
-                <a class="btn btn-default" href="#" role="button" id="msnbcBnt">MSNBC Live</a>
-                <br>
-                <a class="btn btn-default" href="#" role="button" id="skyBnt">SKY News Live</a>
+              <h2> Video Feeds </h2>
+                <p><a class="btn btn-default" href="#" role="button" id="cnnBnt">CNN Live</a></p>
+                <p><a class="btn btn-default" href="#" role="button" id="foxBnt">FOX News Live</a></p>
+                <p><a class="btn btn-default" href="#" role="button" id="abcBnt">ABC News Live</a></p>
+                <p><a class="btn btn-default" href="#" role="button" id="msnbcBnt">MSNBC Live</a></p>
+                <p><a class="btn btn-default" href="#" role="button" id="skyBnt">SKY News Live</a></p>
+
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for Live Link" aria-describedby="basic-addon2">
+                <span class="input-group-btn"><button class="btn btn-default" href="#" type="button" id="search-button">Search</button></span>
+              </div>
             </div>
         </div> 
     </div>
@@ -44,23 +47,23 @@
         </div>
         <table class="table">
             <!--  table  -->
-            <thead>
-                <tr class="table-light">
+                <tr>
                     <th scope="col">News Source:</th>
                     <th scope="col">Articles:</th>
                     <th scope="col">Date:</th>
                     <th scope="col">Link:</th>
                 </tr>
-            </thead>
             <tbody>
             </tbody>
-        </table> <!-- table  -->
+        </table> 
+
+        <!-- table  -->
         
         <!-- ******************* form ********************* -->
         <form id="main-form">
             <div class="form-group">
                 <label for="pwd">Search:</label>
-                <input type="text" class="form-control" id="search-video" placeholder="search topic" name="search-video">
+                <input type="text" class="form-control" id="search-video" placeholder="Search Topic" name="search-video">
             </div>
             <!-- ******************* buttons ********************* -->
             <button type="submit" class="btn btn-success" id="add-button"> Add</button>
