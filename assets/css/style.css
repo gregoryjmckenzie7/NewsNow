@@ -1,58 +1,140 @@
-h1 {
+/* ====================== Title section =================================*/
 
+#header {
     text-align: center;
+    font-family:Impact;
+    background: #181818;
+}
 
-    font-style: bold;
 
-    color: white;
 
-    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+/* ====================== Title section =================================*/
 
-    font-size: 60px;
+.container {
+    width:100%;
+}
+
+img {
+    width:600px;
+    height:400px;   
+    margin-top:5px;
+}
+
+
+.jumbotron h1 {
+    font-size:90px;
+    letter-spacing:.5;
+    line-height:1;
+}
+
+.awesome {
+
+    color:green;
+    
 
 }
 
-p{
 
-    color: white;
+
+/* ====================== BACKGROUND =================================*/
+
+body {
+    background: #181818;
 
 }
 
-.jumbotron {
+/* ====================== table =================================*/
 
-    background-color: #e52d27;
+table {
+    background: white;
+    border-radius:6px;
+    border: none;
 
+}
+
+thead {
+    border:none;
+}
+
+
+/* ====================== Video and news Section =================================*/
+
+#video-and-news {
+    background: none;
+}
+
+#video {
+    vertical-align: center;
+    text-align: center;
+    padding: 10px;
+    
+
+}
+
+#newslinks {
+    color:white;
+    font-size:16px;
+    letter-spacing:.5;
+    padding:10px;
+    
+}
+
+/* ====================== Recent News section =================================*/
+
+
+#recentNews {
+    background-color: #898989;
+    width: 100%;
+    padding-right:50px;
+    padding-left:50px;
 }
 
 .panel-heading {
-
-    background-color: #e52d27;
-
-}
-
-table {
-
+    background: linear-gradient(-90deg, #84247b, #b50e67);
+    background-color: black;
     text-align: center;
-
-    margin-bottom: 20px;
-
 }
 
-.videoBox{
-
-    width: 420px;
-
-    height: 315px;
-
-    padding: 20px;
-
-    background-color: orange;
-
+.panel-body {
+    background-color: white;
+    opacity: 0.5;
 }
 
-.lyricBox {
-
-    background-color: green;
-
+h2 {
+    color:white;
 }
 
+.container {
+    padding-right:5px;
+    padding-left:5px;
+}
+
+p{
+    font-family: helvetica;
+}
+
+.gradientFont{
+    text-align: center;
+    color: #313131;
+    
+}
+
+form {
+    margin-bottom:60px;
+}
+
+#search-video {
+    cursor:text;
+}
+
+#add-button {
+    background: #b50e67;
+    border: none;
+    cursor:pointer;
+}
+
+#clear-results {
+    background: #84247b;
+    color: white;
+    border:none;
+}
