@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 
 var config = {
   apiKey: "AIzaSyCEd4RSIw_LG9szIaL90oihqIB0rZinJMo",
@@ -45,6 +47,7 @@ $("#search-button").click(function(event){
   event.preventDefault();
 
   $("#video").empty();
+  
 
   var searchInput = $(".form-control").val().trim(); 
 
@@ -162,11 +165,13 @@ $("#clear-results").click(function(){
 
   $(".table > tbody").empty();
   database.remove();
+  return false;
 
 });
 
 //Channel buttons for live channel via YouTube.
-$(".channel-button").click(function(e){
+$(".channel-button").on("click", function(e){
+  console.log("Clicked");
 
   e.preventDefault();
   $("#video").empty();
@@ -197,10 +202,14 @@ $(".channel-button").click(function(e){
 $("#weather-button").click(function(){
 
   event.preventDefault();
+  $(".weather-control").empty();
 
   var zipCode = $(".weather-control").val().trim();
   
   var weatherUrl = "https://api.openweathermap.org/data/2.5/weather?zip=" +  zipCode + "&units=imperial&appid=96d9998aea65bf4a2c82d20b6f51afde";
+
+  var forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?zip=" +  zipCode + "&units=imperial&appid=96d9998aea65bf4a2c82d20b6f51afde";
+
 
   $.ajax({
     url:weatherUrl,
@@ -208,16 +217,17 @@ $("#weather-button").click(function(){
   }).done(function(response){
     
     console.log(response);
+
     var temp = response.main.temp;
     var weatherIcon = response.weather[0].icon;
     console.log(temp,weatherIcon);
-    tempDiv = $("<div>").text(temp + " F");
+    tempDiv = $("<p>").text(temp + " F");
     weather = $("<img>").attr("src", "assets/images/" + weatherIcon + ".png");       
 
     $(".weather-icon").append(weather);
     $(".weather-icon").append(tempDiv);
        
   });
-
+});
 
 });
