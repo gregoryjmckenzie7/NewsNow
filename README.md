@@ -9,7 +9,7 @@ A Web application that you can use to see the most current news from all over th
 * The top five news articles will appear on the webpage
 * The motivation for this app is to provide a faster and easier way for users to view only the news they want to learn about.
 
-* You can access the app: 
+* You can access the app: https://gregoryjmckenzie7.github.io/NewsNow/
 
 # Technologies Used
 
